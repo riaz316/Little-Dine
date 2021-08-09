@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Little Dine - Menu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="menu.css">
+        <script src="menu.js" async></script>
+    </head>
+    <body>
+        
+        <header class="header">
+
+            <h1 class="mainHeading">Little Dine</h1>
+            
+            <nav class="navbar">
+                <ul class="navlinks">
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="menu.html" target="_blank" class="active">Menu</a></li>
+                    <li><a href="login.html" target="_blank">Login</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content-section container">
+            <h2 class="section-header">MENU</h2>
+
+            <!--Main Course-->
+            <div class="course">
+                <h3 class="subsection-header">Main Course</h3>
+                <div class="menu-row-heading">
+                    <strong class="row-value item">Item</strong>
+                    <!-- <span class="row-value size"><strong>Size</strong></span> -->
+                    <span class="row-value quantity"><strong>Quantity</strong></span>
+                    <span class="row-value price"><strong>Price</strong></span>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Khichuri</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">130tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Fried Rice</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">130tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Polao</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">140tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Chicken Chaap</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">100tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Shwarma</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">100tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+            </div>
+
+
+            <!--Dessert-->
+            <div class="course">
+                <h3 class="subsection-header">Drinks</h3>
+                <div class="menu-row-heading">
+                    <strong class="row-value item">Item</strong>
+                    <!-- <span class="row-value size"><strong>Size</strong></span> -->
+                    <span class="row-value quantity"><strong>Quantity</strong></span>
+                    <span class="row-value price"><strong>Price</strong></span>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Mint Lemonade</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">100tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Orange Lemonade</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">100tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Oreo Shake</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">150tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Strawberry Shake</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">130tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+                <div class="menu-row">
+                    <strong class="row-value item">Coke</strong>
+                    
+                    <span class="row-value quantity"><input type="number" id="quantity" name="quantity" min="1" max="20"></span>
+                    <span class="row-value price">50tk</span>
+                    <button type="button" class="cart-button">Add to Cart</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CART -->
+
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+
+            <div class="cart-items">
+                
+
+            </div>
+
+
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">0tk</span>
+            </div>
+
+            <button class="btn btn-primary btn-purchase" type="button">Purchase</button>
+        </section>
+
+        
+    </body>
+</html>

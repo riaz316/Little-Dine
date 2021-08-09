@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    margin: 0;
+}
+
+/* Header */
+
+.header{
+    background-color: rgb(18, 155, 155);
+}
+
+.mainHeading{
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 4.3em;
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+.mainHeading:hover{
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 35px;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navlinks li{
+    display: inline-block;
+}
+
+li a {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+}
+
+li a:hover {
+    transition: all 0.2s ease 0s;
+    background-color: rgb(13, 135, 156);
+    border-radius: 10%;
+}
+
+.active{
+    color: black;
+}
+
+/* MENU */
+
+.section-header{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2.0em;
+    
+}
+
+.subsection-header{
+    border-top: 1px solid;
+    padding: 15px 0px 20px 10px; 
+    font-size: 1.5em;
+    color: rgb(66, 61, 61);
+    border-bottom: 1px solid;
+    margin-bottom: 15px;
+}
+
+.menu-row-heading{
+    padding-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.menu-row{
+    padding-bottom: 1em;
+}
+
+.row-value{
+    padding-right: 0.5em;
+    display: inline-block;
+}
+
+.item{
+    width: 20%;
+    text-align: center;
+}
+
+.item:hover{
+    cursor:pointer;
+}
+
+.size{
+    width: 10%;
+}
+
+.price{
+    width: 15%;
+    text-align: center;
+}
+
+.quantity{
+    width:10%;
+    text-align: center;
+}
+
+.cart-button{
+    background-color: rgb(18, 155, 155);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.cart-button:hover{
+    transition: ease 0.3s;
+    background-color: black;
+}
+
+.course{
+    border-bottom: 1px solid;
+}
+
+
+/* CART */
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    cursor: pointer;
+    color: white;
+    background-color: #ca0b0b;
+    padding: .5em .5em;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    transition: ease 0.3s;
+    background-color: black;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-quantity-input:hover {
+    transition: ease 0.3s;
+    background-color: rgb(78, 75, 75);
+    border: 1px solid #56CCF2;
+    color: rgb(255, 255, 255);
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    cursor: pointer;
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    border: none;
+    color: white;
+    background-color: rgb(7, 72, 110);
+    border-radius: 10px;
+    padding: .5em .5em;
+}
+
+.btn-purchase:hover {
+    transition: ease 0.3s;
+    background-color: rgb(22, 26, 34);
+}

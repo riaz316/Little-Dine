@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Dine - Signup</title>
+    <script defer src="signup.js"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <h1 class="mainHeading">Little Dine</h1>
+        
+        <nav class="navbar">
+            <ul class="navlinks">
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="menu.html" target="_blank">Menu</a></li>
+                <li><a href="login.html" target="_blank" class="active">Login</a></li> 
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="full-screen-container">
+
+        
+
+        <div class="login-container">
+            <h3 class="login-title">Welcome</h3>
+
+            <div id="error"></div>
+
+            <form id="form">
+                <div class="input-group">
+                    <label>First Name</label>
+                    <input required id="fname" name="fname" type="text">
+                </div>
+
+                <div class="input-group">
+                    <label>Last Name</label>
+                    <input required id="lname" name="lname" type="text">
+                </div>
+
+                <div class="input-group">
+                    <label>E-mail</label>
+                    <input required id="email" name="email" type="email">
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input required id="password" name="password" type="password">
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input required id="c-password" name="c-password" type="password">
+                </div>
+
+                <button type="submit" class="login-button signup">Sign Up</button>
+                <p class="already-user">Already a user?</p>
+                <button type="submit" class="login-button"><a href="login.html" class="logsign-link">Login</a></button>
+                
+            </form>
+
+            
+        </div>
+    </div>
+
+</body>
+</html>

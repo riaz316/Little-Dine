@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+/* Header */
+
+.header {
+  background-color: rgb(18, 155, 155);
+}
+
+.mainHeading {
+  font-family: "Indie Flower", cursive;
+  color: white;
+  font-size: 4.3em;
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+.mainHeading:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 35px;
+  padding: 0;
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navlinks li {
+  display: inline-block;
+}
+
+li a {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+}
+
+li a:hover {
+  transition: all 0.2s ease 0s;
+  background-color: rgb(13, 135, 156);
+  border-radius: 20%;
+}
+
+.active {
+  color: black;
+}
+
+/* Login Form */
+
+.full-screen-container {
+  background-image: url(Pictures/Main\ Image.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: hsla(200, 15%, 23%, 0.6);
+  padding: 50px 30px;
+  width: 50%;
+  min-width: 400px;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.login-title {
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  color: rgb(226, 222, 222);
+  font-size: 1.5em;
+  margin-bottom: 7px;
+  font-weight: lighter;
+}
+
+.input-group input {
+  font-size: 1.3em;
+  padding: 0.1em 0.25em;
+  background-color: hsla(200, 15%, 23%, 0.3);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-weight: lighter;
+}
+
+.input-group input:focus {
+  background-color: hsla(200, 15%, 23%, 0.5);
+}
+
+.login-button {
+  background-color: rgb(18, 155, 155);
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  font-weight: lighter;
+  margin-top: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-button:hover {
+  transition: all 0.2s ease 0s;
+  background-color: hsl(198, 94%, 19%);
+}
+
+.already-user {
+  padding-top: 10px;
+  color: white;
+}
+
+.logsign-link {
+  text-decoration: none;
+  color: white;
+}
+
+#error {
+  color: red;
+}
